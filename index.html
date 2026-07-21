@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iLinkSpace - Connecting Intelligence, Linking Life</title>
+    <meta name="description" content="iLinkSpace redefines modern living through intelligent technology, seamless connectivity, and hardware innovation.">
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ilinkspace.com">
+    <meta property="og:title" content="iLinkSpace - Connecting Intelligence, Linking Life">
+    <meta property="og:description" content="Experience the future of connected living. Smart, seamless, and intuitive.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-primary: #ffffff;
+            --text-secondary: #999999;
+            --accent-color: #00f0ff;
+            --accent-glow: rgba(0, 240, 255, 0.3);
+            --grey-dark: #111111;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-family); background-color: var(--bg-color); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        img { max-width: 100%; display: block; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- Header --- */
+        header { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 20px 0; background-color: rgba(5, 5, 5, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: 2px; color: var(--text-primary); }
+        .logo span { color: var(--accent-color); }
+        .btn-primary { background: transparent; border: 1px solid var(--accent-color); color: var(--accent-color); padding: 10px 25px; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; border-radius: 4px; box-shadow: 0 0 15px var(--accent-glow); }
+        .btn-primary:hover { background-color: var(--accent-color); color: #000; box-shadow: 0 0 25px var(--accent-color); }
+
+        /* --- Hero --- */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px; position: relative; background: radial-gradient(circle at center, #101820 0%, #050505 70%); }
+        .hero-content { z-index: 2; }
+        h1 { font-size: 3.5rem; margin-bottom: 20px; letter-spacing: -1px; font-weight: 700; }
+        h1 span { background: linear-gradient(90deg, #ffffff, var(--accent-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tagline { color: var(--accent-color); text-transform: uppercase; letter-spacing: 4px; font-size: 0.85rem; display: block; margin-bottom: 15px; font-weight: 600; }
+        .hero p { color: var(--text-secondary); max-width: 600px; margin: 0 auto 30px auto; font-size: 1.1rem; }
+
+        /* --- Features Section --- */
+        .section { padding: 120px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 600; }
+        .section-title p { color: var(--text-secondary); }
+
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-item { background: var(--grey-dark); padding: 40px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .feature-item:hover { border-color: var(--accent-color); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 240, 255, 0.05); }
+        .feature-icon { font-size: 2rem; margin-bottom: 20px; display: block; }
+        .feature-item h3 { font-size: 1.25rem; margin-bottom: 10px; font-weight: 600; }
+        .feature-item p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* --- Vision / Concept Section --- */
+        .vision { background-color: #080808; text-align: center; }
+        .vision-box { max-width: 800px; margin: 0 auto; }
+        .vision-box h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .vision-box p { color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 40px; }
+
+        /* --- Footer --- */
+        footer { padding: 60px 0; background-color: #020202; text-align: center; color: var(--text-secondary); font-size: 0.9rem; }
+        .footer-logo { font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 15px; letter-spacing: 1px; }
+        .footer-logo span { color: var(--accent-color); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">iLink<span>Space</span></a>
+                <a href="#" class="btn-primary">Explore Ecosystem</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="tagline">Intelligent Connectivity</span>
+            <h1>Connecting Intelligence, <span>Linking Life.</span></h1>
+            <p>Bridging the gap between advanced hardware and everyday experiences. Building a smarter, more harmonious physical and digital ecosystem.</p>
+            <a href="#" class="btn-primary">Discover the Future</a>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Designed for the Connected Era</h2>
+                <p>Seamlessly blending smart engineering with intuitive interaction.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🧠</span>
+                    <h3>Ambient Intelligence</h3>
+                    <p>Systems that understand context, adapt to your routines, and respond effortlessly to your environment.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Seamless Ecosystem</h3>
+                    <p>Uncompromising hardware and software integration that makes cross-device communication fluid and reliable.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🌌</span>
+                    <h3>Immersive Spaces</h3>
+                    <p>Transforming ordinary environments into smart living spaces driven by precise sensing and responsive feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="section vision">
+        <div class="container">
+            <div class="vision-box">
+                <h2>Reimagining Interaction</h2>
+                <p>At iLinkSpace, we believe technology should fade into the background while enhancing what matters most. By uniting smart nodes with expressive, human-centric design, we bring connection back to the center of daily life.</p>
+                <a href="#" class="btn-primary">Join the Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">iLink<span>Space</span></div>
+            <p>&copy; 2026 iLinkSpace. All rights reserved. Connecting Intelligence, Linking Life.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
